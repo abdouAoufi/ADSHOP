@@ -163,7 +163,7 @@ input {
         height: auto;
         transition: .5s;
         background: var(--primary);
-        top: 60px;
+        top: 50px;
         left: -100%;
         text-align: center;
     }
@@ -185,11 +185,11 @@ input {
         color: #3498db;
     }
     .signin-container {
-        width: 75%;
+        width: 85%;
         height: auto;
         position: absolute;
         margin: 0 auto;
-        top: 30%;
+        top: 25%;
         transform: translateY(50%);
         transform: translateX(-50%);
         left: 50%;
@@ -201,12 +201,12 @@ input {
     }
     .btn {
         width: 60%;
-        height: 48px;
+        height: 40px;
         border-radius: 8px;
         margin-top: 30px;
     }
     input {
         font-size: 16pt;
-        height: 50px;
+        height: 40px;
     }
 }
