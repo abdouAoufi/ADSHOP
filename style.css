@@ -1,15 +1,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-* {
+*,
+ ::after,
+ ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    /* dark shades of primary color*/
+    --primary: #071a52;
+    --primary_3: rgba(3, 10, 32, 0.726);
+    --primary_2: rgb(83, 167, 216);
+    --white: #FFF;
+    --clr-black: #222;
+    --ff-primary: "Montserrat", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
 }
 
 body {
+    background: url(images/bg-real_2.jpg);
+    background-position: center;
     font-family: 'Montserrat', sans-serif;
-    background: #fdfdfd;
+}
+
+.logo img {
+    padding: 8px;
 }
 
 nav {
-    background-color: aquamarine!important;
+    height: 8vh;
+    position: sticky;
+    z-index: 3;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 60px;
+    background: var(--primary);
+}
+
+nav ul {
+    float: right;
+    margin-right: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 50px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+}
+
+a.active,
+a:hover {
+    /* border: 1px solid white; */
+    color: var(--primary_2);
+    transition: .5s;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.section {
+    position: relative;
+    height: 92vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.signin-container {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    width: 22.5%;
+    height: auto;
+    padding: 1rem 1rem;
+    background-color: var(--primary_3);
+    text-align: center;
+    color: #FFF;
+    border-radius: 8px;
+}
+
+.signin-container p {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+form {
+    margin-top: 15px;
+}
+
+input {
+    font-size: 13pt;
+    padding: 8px;
+    border-radius: 8px;
+    width: 90%;
+    height: 35px;
+    margin: 5px auto;
+}
+
+.btn {
+    width: 40%;
+    height: 35px;
+    margin-top: 15px;
+    border: none;
+    font-size: 13pt;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #21e6c1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #20d1b1;
+}
+
+@media (max-width: 1048px) {
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px) {
+    nav {
+        padding: 0 20px;
+        z-index: 100;
+    }
+    label.logo {
+        font-size: 19pt;
+    }
+    nav #icon {
+        display: block;
+        /* margin: 0; */
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        transition: .5s;
+        background: var(--primary);
+        top: 50px;
+        left: -100%;
+        text-align: center;
+    }
+    .normal {
+        left: 0;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active,
+    a.hover {
+        border: none;
+        color: #3498db;
+    }
+    .section {
+        display: grid;
+        place-items: center;
+    }
+    .signin-container {
+        width: 75%;
+        height: 60%;
+        padding: 3rem 1rem;
+        background-color: var(--primary_3);
+        text-align: center;
+        color: #FFF;
+        border-radius: 8px;
+    }
 }
