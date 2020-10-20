@@ -15,43 +15,41 @@
 
 <body>
     <!-- Navigation bar -->
-    <nav id="nav">
-        <label class="logo">
-             <img src="images/logo.png" alt="logo"  >
-        </label>
-        <ul class="list">
-            <li><a class="active" href="#Home">Sign in</a></li>
-            <li><a href="#About">Log in</a></li>
-            <li><a href="#Services">Gueust</a></li>
-
-        </ul>
-        <label id="icon" class="bars">
-            <i class="fa fa-bars"></i>
-        </label>
-    </nav>
-
-    <main>
-        <section class="section">
-
-            <div class="signin-container">
-
-                <h1>Weclome to ADShope</h1>
-
-                <p>You can easly sign in with your email now</p>
-
-                <form action="#">
-                    <input type="name" name="email" id="email" cla placeholder="Name">
-                    <input type="email" name="email" id="email" placeholder="Email">
-
-                    <button class="btn">
-                        sign in
-                    </button>
-                </form>
-
+    <nav class="nav">
+        <div class="nav-center">
+            <!-- ! phone -->
+            <div class="nav-header">
+                <div class="cont">
+                    <img src="images/mouse.png" class="nav-logo" alt="" height="50" />
+                    <div class="quote">
+                        <h1>Abdou <span>Shop</span></h1>
+                        <h4>Taste Quality</h4>
+                    </div>
+                </div>
+                <button class="sign-in"><a href="signin.html" id="sign">sign up</a></button>
             </div>
+        </div>
+    </nav>
+    <section class="section-center">
+        <div class="conatiner">
+            <form action="#">
+                <p>You can log-in your account just using your email and passowrd</p>
+                <div class="entries">
+                    <input type="email" name="email" placeholder="Email"> <br>
+                    <input type="password" name="passowrd" placeholder="passowrd">
+                    <input type="submit" placeholder="log in" id="login">
+                </div>
 
-        </section>
-    </main>
+
+            </form>
+        </div>
+    </section>
+    <section class="hero">
+
+    </section>
+
+
+
     <!-- my script -->
     <script src="app.js"></script>
 </body>
