@@ -1,200 +1,254 @@
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-            *,
-             ::after,
-             ::before {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                text-decoration: none;
-                outline: none;
-            }
-            
-             :root {
-                /* dark shades of primary color*/
-                --primary: #071a52;
-                --primary_3: rgba(3, 10, 32, 0.726);
-                --primary_2: rgb(83, 167, 216);
-                --white: #FFF;
-                --clr-black: #222;
-                --ff-primary: "Montserrat", sans-serif;
-                --ff-secondary: "Open Sans", sans-serif;
-                --transition: all 0.3s linear;
-                --spacing: 0.25rem;
-                --radius: 0.5rem;
-                --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-                --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-                --max-width: 1170px;
-                --fixed-width: 620px;
-            }
-            
-            body {
-                font-family: 'Montserrat', sans-serif;
-            }
-            
-            a {
-                text-decoration: none;
-            }
-            /* ! NAVBAR */
-            
-            .nav {
-                position: sticky;
-                height: 5rem;
-                display: flex;
-                padding: 0 20px;
-                justify-content: center;
-                width: 100%;
-                align-items: center;
-                background: #FFFFFF;
-            }
-            
-            .nav-center {
-                width: 90vw;
-                max-width: 1170px;
-            }
-            
-            .nav-header {
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .cont {
-                display: flex;
-            }
-            
-            .cont .quote {
-                padding-left: 1rem;
-            }
-            
-            .quote h1 {
-                cursor: pointer;
-                color: #112a75;
-            }
-            
-            .cont h1 span {
-                color: rgb(21, 199, 101);
-                text-shadow: 1px 1px 3px #222;
-            }
-            
-            .cont h4 {
-                font-weight: 100;
-                color: rgb(55, 130, 214);
-            }
-            
-            .sign-in::before {
-                position: absolute;
-                content: ">>";
-                top: 50%;
-                transform: translateY(-50%);
-                right: 4px;
-                color: rgb(21, 199, 101);
-                font-size: 13pt;
-                font-weight: 700;
-                display: none;
-                padding-right: 6px;
-            }
-            
-            .sign-in {
-                position: relative;
-                background-color: transparent;
-                padding: 6px 17px;
-                height: 40px;
-                vertical-align: middle;
-                align-self: center;
-                border: 2px solid rgb(21, 199, 101);
-                border-radius: 6px;
-                cursor: pointer;
-            }
-            
-            .sign-in:hover {
-                padding-right: 35px;
-            }
-            
-            .sign-in:hover::before {
-                display: block;
-            }
-            
-            #sign {
-                color: rgb(21, 199, 101);
-                font-weight: 700;
-                font-size: 13pt;
-            }
-            /* ! END  OF NAVABR */
-            
-            .hero {}
-            
-            .section-center {
-                margin-top: -5rem;
-                width: 100vw;
-                height: 100vh;
-                display: grid;
-                place-items: center;
-                background-image: url(images/bg-real.jpg);
-                background-position: center;
-                background-size: cover;
-            }
-            
-            .conatiner {
-                padding: .5rem .5rem;
-                background: #FFF;
-                border-radius: 8px;
-                width: 60%;
-                height: auto;
-                box-shadow: 7px 7px 10px rgba(34, 34, 34, 0.486);
-                display: grid;
-                place-items: center;
-            }
-            
-            .conatiner p {
-                align-self: center;
-                margin: 1.1rem auto;
-                width: 90%;
-                font-weight: 600;
-                color: #222;
-                font-size: 12pt;
-                text-align: start;
-            }
-            
-            .entries {
-                width: 100%;
-                display: grid;
-                align-self: center;
-                margin: 1.5rem auto;
-            }
-            
-            .entries input {
-                width: 90%;
-                height: 40px;
-                font-size: 13pt;
-                font-family: var(--ff-primary);
-                padding-left: 6px;
-                margin: auto auto;
-                border: .3px solid rgb(124, 120, 120);
-                border-radius: 5px;
-            }
-            
-            #login {
-                border: none;
-                margin-top: 1.6rem;
-                background-color: rgb(21, 199, 101);
-                width: 60%;
-                font-size: 13pt;
-                font-weight: 700;
-                color: white;
-                cursor: pointer;
-            }
-            
-            #login:hover {
-                background-color: rgb(20, 184, 94);
-            }
-            
-            @media screen and (min-width:768px) {
-                .conatiner {
-                    width: 25%;
-                    height: 50%;
-                    display: grid;
-                    place-items: center;
-                }
-                .conatiner {
-                    /* height: 60%; */
-                }
-            }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*,
+ ::after,
+ ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+ :root {
+    /* dark shades of primary color*/
+    --primary: #071a52;
+    --primary_3: rgba(3, 10, 32, 0.726);
+    --primary_2: rgb(83, 167, 216);
+    --white: #FFF;
+    --clr-black: #222;
+    --ff-primary: "Montserrat", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ! NAVBAR */
+
+.nav {
+    position: sticky;
+    height: 5rem;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.nav-center {
+    width: 90vw;
+    max-width: 1170px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont {
+    display: flex;
+}
+
+.cont .quote {
+    padding-left: 1rem;
+}
+
+.quote h1 {
+    cursor: pointer;
+    color: #112a75;
+}
+
+.cont h1 span {
+    color: rgb(21, 199, 101);
+    text-shadow: 1px 1px 3px #222;
+}
+
+.cont h4 {
+    font-weight: 100;
+    color: rgb(55, 130, 214);
+}
+
+.sign-in::before {
+    position: absolute;
+    content: ">>";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    color: rgb(21, 199, 101);
+    font-size: 13pt;
+    font-weight: 700;
+    display: none;
+    padding-right: 6px;
+}
+
+.sign-in {
+    position: relative;
+    background-color: transparent;
+    padding: 6px 17px;
+    height: 40px;
+    vertical-align: middle;
+    align-self: center;
+    border: 2px solid rgb(21, 199, 101);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    padding-right: 35px;
+}
+
+.sign-in:hover::before {
+    display: block;
+}
+
+#sign {
+    color: rgb(21, 199, 101);
+    font-weight: 700;
+    font-size: 13pt;
+}
+
+
+/* ! END  OF NAVABR */
+
+.hero {}
+
+.section-center::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(./images/hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.section-center {
+    margin-top: -5rem;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.conatiner {
+    margin-top: 4rem;
+    padding: .5rem .5rem;
+    background: #FFF;
+    border-radius: 8px;
+    width: 60%;
+    height: auto;
+    box-shadow: 7px 7px 10px rgba(34, 34, 34, 0.486);
+    display: grid;
+    place-items: center;
+}
+
+.conatiner p {
+    align-self: center;
+    margin: 1.1rem auto;
+    width: 90%;
+    font-weight: 300;
+    color: #222;
+    font-size: 12pt;
+    text-align: start;
+}
+
+.conatiner h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    margin: 1.1rem auto;
+    width: 90%;
+    font-weight: 600;
+    color: rgb(21, 199, 101);
+    text-align: center;
+}
+
+.entries {
+    width: 100%;
+    display: grid;
+    align-self: center;
+    margin: 1.5rem auto;
+}
+
+.entries input {
+    width: 90%;
+    height: 40px;
+    font-size: 13pt;
+    font-family: var(--ff-primary);
+    padding-left: 6px;
+    margin: auto auto;
+    border: .3px solid rgb(124, 120, 120);
+    border-radius: 5px;
+}
+
+#login {
+    border: none;
+    margin-top: 1.6rem;
+    background-color: rgb(21, 199, 101);
+    width: auto;
+    font-size: 13pt;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: rgb(20, 184, 94);
+}
+
+@media screen and (max-width:641px) {
+    .conatiner {
+        width: 80%;
+    }
+    .cont .quote {
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .conatiner {
+        width: 35%;
+        height: 50%;
+        display: grid;
+        place-items: center;
+    }
+    .conatiner {
+        /* height: 60%; */
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .conatiner {
+        width: 35%;
+        height: auto;
+    }
+    .conatiner {
+        /* height: 60%; */
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .conatiner {
+        width: 35%;
+        height: auto;
+        display: grid;
+        place-items: center;
+    }
+}
