@@ -100,6 +100,7 @@ a {
     background-color: transparent;
     padding: 6px 17px;
     height: 40px;
+    width: auto;
     vertical-align: middle;
     align-self: center;
     border: 2px solid rgb(21, 199, 101);
@@ -126,7 +127,8 @@ a {
 
 .hero {}
 
-.section-center::before {
+
+/* .section-center::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -138,9 +140,11 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-}
+} */
 
 .section-center {
+    background: #7eafc1;
+    background-image: linear-gradient(-30deg, #fff7fb, #efe7f2, #dbd8ea, #bfc9e2, #98b9d9, #6aa8cf, #4096c0, #1987a0, #047877);
     margin-top: -5rem;
     width: 100vw;
     height: 100vh;
@@ -202,7 +206,7 @@ a {
     border: none;
     margin-top: 1.6rem;
     background-color: rgb(21, 199, 101);
-    width: auto;
+    width: 60%;
     font-size: 13pt;
     font-weight: 700;
     color: white;
