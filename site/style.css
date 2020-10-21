@@ -48,6 +48,7 @@ a {
     width: 100%;
     align-items: center;
     background: #FFFFFF;
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.3);
 }
 
 .nav-center {
@@ -130,9 +131,17 @@ a {
 .hero {}
 
 .section-center {
-    background: #7eafc1;
-    background-image: linear-gradient(-30deg, #fff7fb, #efe7f2, #dbd8ea, #bfc9e2, #98b9d9, #6aa8cf, #4096c0, #1987a0, #047877);
-    margin-top: -5rem;
+    background: #e2f3f5;
+    margin-top: -4rem;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.section-center-up {
+    background: #e2f3f5;
+    margin-top: -4rem;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -203,6 +212,7 @@ a {
     font-weight: 700;
     color: white;
     cursor: pointer;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.239);
 }
 
 #login:hover {
@@ -224,7 +234,7 @@ a {
     }
 }
 
-@media (min-width :1025px) and ( max-width:1400px) {
+@media (min-width :1025px) {
     .conatiner {
         width: 25%;
     }
