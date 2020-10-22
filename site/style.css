@@ -149,6 +149,7 @@ a {
 }
 
 .conatiner {
+    margin-top: -4rem;
     transition: all .6s ease;
     margin-top: 4rem;
     padding: .5rem .5rem;
