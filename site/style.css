@@ -155,7 +155,6 @@ a {
     z-index: 3;
     margin-top: -4rem;
     transition: all .6s ease;
-    margin-top: 4rem;
     padding: .5rem .5rem;
     background: #FFF;
     border-radius: 8px;
@@ -268,7 +267,7 @@ a {
 .container-up {
     z-index: 3;
     transition: all .6s ease;
-    margin-top: 4rem;
+    margin-top: -4rem;
     padding: .5rem .2rem;
     background: #FFF;
     border-radius: 8px;
