@@ -336,7 +336,7 @@ a {
         display: none;
     }
     .container-up {
-        width: 80%;
+        width: 90%;
     }
     .sign-up input {
         width: 90%;
@@ -357,6 +357,9 @@ a {
     }
     .cont .quote {
         display: none;
+    }
+    .container-up {
+        width: 90%;
     }
     .section-center-up h1,
     h2 {
