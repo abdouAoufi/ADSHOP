@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 *,
  ::after,
  ::before {
@@ -20,7 +21,7 @@
     --ff-secondary: "Open Sans", sans-serif;
     --transition: all 0.3s linear;
     --spacing: 0.25rem;
-    --radius: 0.5rem;
+    --radius: 0.2rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --max-width: 1170px;
@@ -48,7 +49,7 @@ a {
     width: 100%;
     align-items: center;
     background: #FFFFFF;
-    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 4.5px 9px #c4c4c4;
 }
 
 .nav-center {
@@ -128,7 +129,8 @@ a {
 
 /* ! END  OF NAVABR */
 
-.hero {}
+
+/* ! LOGIN */
 
 .section-center {
     background: #e2f3f5;
@@ -140,7 +142,8 @@ a {
 }
 
 .section-center-up {
-    background: #e2f3f5;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 85%);
     margin-top: -4rem;
     width: 100vw;
     height: 100vh;
@@ -149,6 +152,7 @@ a {
 }
 
 .conatiner {
+    z-index: 3;
     margin-top: -4rem;
     transition: all .6s ease;
     margin-top: 4rem;
@@ -157,7 +161,7 @@ a {
     border-radius: 8px;
     width: 60%;
     height: auto;
-    box-shadow: 7px 7px 10px rgba(34, 34, 34, 0.486);
+    box-shadow: 7px 7px 10px #c4c4c4;
     display: grid;
     place-items: center;
 }
@@ -212,12 +216,141 @@ a {
     font-size: 13pt;
     font-weight: 700;
     color: white;
+    text-transform: capitalize;
     cursor: pointer;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.239);
 }
 
 #login:hover {
     background-color: rgb(20, 184, 94);
+}
+
+
+/* ! END LOGIN */
+
+
+/*  ! MEDIA QUERIES */
+
+
+/* ! END MEDIA QUERIES */
+
+
+/* ! SIGN UP */
+
+.section-center-up h1 {
+    color: rgba(224, 231, 227, 0.829);
+    text-shadow: 7px 7px 10px #47454542;
+    font-family: 'Lemon', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    font-size: 8rem;
+    top: 30%;
+    left: 5%;
+}
+
+.section-center-up h2 {
+    color: rgba(224, 231, 227, 0.829);
+    text-shadow: 7px 7px 10px #47454542;
+    font-family: 'Lemon', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    font-size: 8rem;
+    top: 60%;
+    right: 5%;
+}
+
+.container-up {
+    z-index: 3;
+    transition: all .6s ease;
+    margin-top: 4rem;
+    padding: 1.2rem .5rem;
+    background: #FFF;
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+    box-shadow: 7px 7px 10px #47454542;
+    display: grid;
+    place-items: center;
+}
+
+.sign-up input {
+    width: 90%;
+    height: 40px;
+    font-size: 12pt;
+    font-family: var(--ff-primary);
+    padding-left: 6px;
+    font-weight: 500;
+    margin: .4rem 1rem;
+    border: .3px solid rgb(124, 120, 120);
+    border-radius: 5px;
+}
+
+.section-center-up #sign-up-btn {
+    margin: auto auto;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1.2rem;
+    background-color: rgb(21, 199, 101);
+    width: 60%;
+    padding: 8px 12px;
+    height: auto;
+    font-size: 13pt;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px #c4c4c4;
+    border-radius: 5px;
+}
+
+#sign-up-btn:hover {
+    background-color: rgb(20, 184, 94);
+}
+
+.section-center-up p {
+    width: 90%;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 12pt;
+}
+
+
+/* ! END SIGN UP */
+
+@media screen and (max-width:568px) {
+    .conatiner {
+        width: 80%;
+    }
+    .cont .quote {
+        display: none;
+    }
+    .section-center-up h1,
+    h2 {
+        display: none;
+    }
+    .container-up {
+        height: 85%;
+        width: 93%;
+    }
+    .sign-up input {
+        width: 90%;
+        height: 35px;
+        font-size: 13pt;
+        font-family: var(--ff-primary);
+        padding-left: 6px;
+        font-weight: 500;
+        margin: .3rem 1rem;
+        border: .3px solid rgb(124, 120, 120);
+        border-radius: 5px;
+    }
 }
 
 @media screen and (max-width:641px) {
@@ -227,9 +360,16 @@ a {
     .cont .quote {
         display: none;
     }
+    .section-center-up h1,
+    h2 {
+        display: none;
+    }
 }
 
 @media screen and (min-width :800px) and ( max-width:1025px) {
+    .container-up {
+        width: 37.5%;
+    }
     .conatiner {
         width: 37.5%;
     }
@@ -238,5 +378,8 @@ a {
 @media (min-width :1025px) {
     .conatiner {
         width: 25%;
+    }
+    .container-up {
+        width: 27.5%;
     }
 }
