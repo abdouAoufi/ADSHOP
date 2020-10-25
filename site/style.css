@@ -129,7 +129,7 @@ a {
 
 .final__register-wrapper {
     background: #87c3c7;
-    background-image: linear-gradient(90deg, #f7fcf0, #e5f5df, #d4eece, #bde5bf, #9fd9bb, #7bcbc4, #58b7cd, #399cc6, #1e7eb7, #0b60a1, #0b60a1);
+    background-image: linear-gradient(-60deg, #80ca84, #66c594, #7bcbc4, #58b7cd, #399cc6, #1e7eb7, #0b60a1, #0b60a1);
     height: 100vh;
     margin-top: -4rem;
     font-size: 16px;
