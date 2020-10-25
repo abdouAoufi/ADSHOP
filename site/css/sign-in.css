@@ -146,10 +146,17 @@ a {
     margin-top: 4rem;
     padding: 15px 10px;
     border-radius: 5px;
+    box-shadow: 8px 9px 13px rgba(0, 0, 0, 0.29);
 }
 
 .container-up * {
     box-sizing: border-box;
+}
+
+.container-up p,
+h1 {
+    color: #999;
+    padding: 8px 15px;
 }
 
 .container-up form input {
