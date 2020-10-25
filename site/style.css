@@ -256,11 +256,17 @@ a {
     .cont .quote {
         display: none;
     }
+    .final__register-block {
+        max-width: 450px;
+    }
 }
 
 @media screen and (max-width:641px) {
     .cont .quote {
         display: none;
+    }
+    .final__register-block {
+        max-width: 400px;
     }
 }
 
