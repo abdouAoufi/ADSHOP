@@ -38,7 +38,6 @@
                 <div class="ponit"> <img src="images/mouse.png" class="nav-logo" alt="" height="50" />
                     <div class="quote">
                         <h1>Abdou <span>Shop</span></h1>
-
                     </div>
                 </div>
                 <ul class="categories">
@@ -91,7 +90,8 @@
         const closeToggle = $('.toggle-close');
         const sideBar = $(".sidebar");
         let isSideBarOpen = false;
-        let url = "data/data.json"
+        let url = "data/data.json";
+
 
         $(document).ready(function() {
             toggle.click(clickToggle);
@@ -110,8 +110,6 @@
             dataType: "json",
         }).done(displayData);
 
-
-
         function displayData(data) {
             $.each(data, display);
         }
@@ -127,7 +125,7 @@
                     </div>
 
                     <div class="img-container">
-                        <img src="${dataSet.img}" alt="galaxy">
+                        <img src="${dataSet.img}" alt="galaxy" height="200" width="180" >
                     </div>
                     <div class="basic-info">
                         <p class="price-product">${dataSet.price} <span>DA</span></p>

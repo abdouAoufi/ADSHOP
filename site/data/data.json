@@ -1,4 +1,5 @@
 [{
+        "category": "Phone",
         "name": "Galaxy s6 ",
         "img": "data/galaxys6.png",
         "price": "13500",
@@ -6,6 +7,7 @@
         "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
     },
     {
+        "category": "Phone",
         "name": "Galaxy s5 ",
         "img": "data/galaxys5.jpg",
         "price": "11500",
@@ -13,6 +15,7 @@
         "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
     },
     {
+        "category": "Phone",
         "name": "Iphone 6s",
         "img": "data/iphone6s.jpg",
         "price": "19500",
@@ -20,6 +23,7 @@
         "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
     },
     {
+        "category": "Phone",
         "name": "Galaxy s6 ",
         "img": "data/galaxys6.png",
         "price": "13500",
@@ -27,6 +31,7 @@
         "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
     },
     {
+        "category": "Phone",
         "name": "Galaxy s5 ",
         "img": "data/galaxys5.jpg",
         "price": "11500",
@@ -34,10 +39,98 @@
         "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
     },
     {
+        "category": "Phone",
+        "name": "Galaxy A11",
+        "img": "https://t.infibeam.com/img/othe/8687242/3d/7f/samsunggalaxya11a115f32gbblue1.jpg.f75bd33d7f.999x600x550.jpg",
+        "price": "29500",
+        "place": "Bourdj Bouariridj",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    },
+    {
+        "category": "Phone",
+        "name": "Galaxy s8",
+        "img": "https://www.gizmochina.com/wp-content/uploads/2018/02/Samsung-Galaxy-S8-Plus-G955FD.jpg",
+        "price": "49500",
+        "place": "Alger",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    },
+    {
+        "category": "Phone",
+        "name": "Galaxy note 8",
+        "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-8.png",
+        "price": "79500",
+        "place": "Alger",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+
+        "category": "Phone",
+        "name": "Galaxy note 9",
+        "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-9-leak-packshot.png",
+        "price": "99500",
+        "place": "Alger",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy s6 ",
+        "img": "data/galaxys6.png",
+        "price": "13500",
+        "place": "Boumerdes Alilguia",
+        "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy s5 ",
+        "img": "data/galaxys5.jpg",
+        "price": "11500",
+        "place": "Boumerdes Boudouaou",
+        "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
         "name": "Iphone 6s",
         "img": "data/iphone6s.jpg",
         "price": "19500",
         "place": "Blida",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy s6 ",
+        "img": "data/galaxys6.png",
+        "price": "13500",
+        "place": "Boumerdes Alilguia",
+        "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy s5 ",
+        "img": "data/galaxys5.jpg",
+        "price": "11500",
+        "place": "Boumerdes Boudouaou",
+        "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy A11",
+        "img": "https://t.infibeam.com/img/othe/8687242/3d/7f/samsunggalaxya11a115f32gbblue1.jpg.f75bd33d7f.999x600x550.jpg",
+        "price": "29500",
+        "place": "Bourdj Bouariridj",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy s8",
+        "img": "https://www.gizmochina.com/wp-content/uploads/2018/02/Samsung-Galaxy-S8-Plus-G955FD.jpg",
+        "price": "49500",
+        "place": "Alger",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy note 8",
+        "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-8.png",
+        "price": "79500",
+        "place": "Alger",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }, {
+        "category": "Phone",
+        "name": "Galaxy note 9",
+        "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-9-leak-packshot.png",
+        "price": "99500",
+        "place": "Alger",
         "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
     }
 ]

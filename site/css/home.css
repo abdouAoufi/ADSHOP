@@ -111,15 +111,16 @@ body {
 /* ! product */
 
 .product {
-    padding: 20px;
+    padding: 20px 1rem;
     background-color: #EEE;
     margin: auto;
     place-items: center;
     /* border: var(--border); */
     border-radius: var(--radius);
     max-width: 400px;
-    height: 420px;
+    height: 410px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .product:hover,
@@ -147,16 +148,17 @@ body {
 }
 
 .img-container {
-    padding: 10px 20px;
+    width: 200px;
+    height: 200px;
+    /* padding: 10px 20px; */
     margin: 10px auto;
+    /* border: var(--border); */
     display: grid;
     place-items: center;
 }
 
 .img-container img {
-    width: 180px;
-    height: 180px;
-    margin: auto;
+    margin: 0;
 }
 
 .basic-info {
