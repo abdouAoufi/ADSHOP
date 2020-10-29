@@ -118,6 +118,7 @@ body {
     /* border: var(--border); */
     border-radius: var(--radius);
     max-width: 400px;
+    height: 420px;
     cursor: pointer;
 }
 

@@ -63,7 +63,7 @@
         <section class="sec">
             <div class="section-container">
 
-                <article class="product">
+                <!-- <article class="product">
                     <div class="title-product"> <a href=""> Galaxy s8 </a>
                         <div>
                             <span>•</span>
@@ -80,7 +80,7 @@
                         <p class="place-product">Boumerdes <span>ALiliguia</span></p>
                     </div>
                     <p class="descreption-product">Lorem ipsum dolor sit amet con tur adipisicing elit. Ad totam temporibus quibusdam obcaecati nostrum sapiente!</p>
-                </article>
+                </article> -->
             </div>
         </section>
     </main>
@@ -91,6 +91,7 @@
         const closeToggle = $('.toggle-close');
         const sideBar = $(".sidebar");
         let isSideBarOpen = false;
+        let url = "data/data.json"
 
         $(document).ready(function() {
             toggle.click(clickToggle);
@@ -99,10 +100,42 @@
                 if (isSideBarOpen) {
                     closeSidebar();
                 }
-            })
+            });
+
         });
 
+        $.ajax({
+            url: "data/data.json",
+            method: "GET",
+            dataType: "json",
+        }).done(displayData);
 
+
+
+        function displayData(data) {
+            $.each(data, display);
+        }
+
+        function display(index, dataSet) {
+            $(".section-container").append(`<article class="product">
+                    <div class="title-product"> <a href=""> ${dataSet.name} </a>
+                        <div>
+                            <span>•</span>
+                            <span>•</span>
+                            <span>•</span>
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="${dataSet.img}" alt="galaxy">
+                    </div>
+                    <div class="basic-info">
+                        <p class="price-product">${dataSet.price} <span>DA</span></p>
+                        <p class="place-product">${dataSet.place}</p>
+                    </div>
+                    <p class="descreption-product">${dataSet.descreption}</p>
+                </article>`);
+        }
 
         function clickToggle() {
             isSideBarOpen = true;

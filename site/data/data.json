@@ -1,0 +1,43 @@
+[{
+        "name": "Galaxy s6 ",
+        "img": "data/galaxys6.png",
+        "price": "13500",
+        "place": "Boumerdes Alilguia",
+        "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    },
+    {
+        "name": "Galaxy s5 ",
+        "img": "data/galaxys5.jpg",
+        "price": "11500",
+        "place": "Boumerdes Boudouaou",
+        "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    },
+    {
+        "name": "Iphone 6s",
+        "img": "data/iphone6s.jpg",
+        "price": "19500",
+        "place": "Blida",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    },
+    {
+        "name": "Galaxy s6 ",
+        "img": "data/galaxys6.png",
+        "price": "13500",
+        "place": "Boumerdes Alilguia",
+        "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    },
+    {
+        "name": "Galaxy s5 ",
+        "img": "data/galaxys5.jpg",
+        "price": "11500",
+        "place": "Boumerdes Boudouaou",
+        "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    },
+    {
+        "name": "Iphone 6s",
+        "img": "data/iphone6s.jpg",
+        "price": "19500",
+        "place": "Blida",
+        "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    }
+]
