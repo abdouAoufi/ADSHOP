@@ -17,13 +17,14 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 body {
     font-family: 'Roboto';
     font-size: 18px;
     background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 20%, #9599E2 80%);
+    /* background-image: linear-gradient(135deg, #8BC6EC 20%, #9599E2 80%); */
 }
 
 .hide {
@@ -157,10 +158,29 @@ body {
     margin: auto;
 }
 
+.basic-info {
+    text-align: start;
+    display: flex;
+    position: relative;
+}
+
 .price-product {
     color: #cb3b3b;
-    margin: 10px auto;
+    padding-right: 1.5rem;
     font-weight: 800;
+}
+
+.price-product span {
+    color: #090a0a;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 3.5px;
+    padding-right: 1.5rem;
+}
+
+.place-product {
+    padding-left: 1.0rem;
+    color: #d49e58;
 }
 
 .descreption-product {
@@ -173,6 +193,7 @@ body {
 /* ! Sidebar */
 
 .sidebar {
+    z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
@@ -184,6 +205,7 @@ body {
     background-color: #fff;
     transition: all .5s ease-in-out;
     box-shadow: var(--shadow);
+    transform: translate(-120%);
 }
 
 .inner-container-aside {
@@ -192,14 +214,21 @@ body {
 }
 
 .hide-side-bar {
-    transform: translate(-100%);
+    transform: translate(0%);
 }
 
 .toggle-close {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 27px;
+    cursor: pointer;
+    color: #cb3b3b;
+    opacity: 1;
+}
+
+.toggle-close i:hover {
+    opacity: 0.5;
 }
 
 .ponit {

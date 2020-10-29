@@ -23,9 +23,8 @@
             </div>
             <div class="info">
                 <ul>
-                    <li>Sign up</li>
-                    <li>login</li>
-                    <li>Guest</li>
+                    <li> <a href="signin.html">Sign up</a></li>
+                    <li> <a href="index.html">Log in</a></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +32,7 @@
 
 
     <main>
-        <aside class="sidebar hide-side-bar">
+        <aside class="sidebar">
             <div class="toggle-close"><i class="fas fa-window-close"></i></div>
             <div class="inner-container-aside">
                 <div class="ponit"> <img src="images/mouse.png" class="nav-logo" alt="" height="50" />
@@ -76,87 +75,46 @@
                     <div class="img-container">
                         <img src="images/gaalxy.png" alt="galaxy">
                     </div>
-
-                    <p class="price-product">128$</p>
+                    <div class="basic-info">
+                        <p class="price-product">60000 <span>DA</span></p>
+                        <p class="place-product">Boumerdes <span>ALiliguia</span></p>
+                    </div>
                     <p class="descreption-product">Lorem ipsum dolor sit amet con tur adipisicing elit. Ad totam temporibus quibusdam obcaecati nostrum sapiente!</p>
                 </article>
-
-
-
-                <article class="product">
-                    <div class="title-product"> <a href=""> Galaxy s8 </a>
-                        <div>
-                            <span>•</span>
-                            <span>•</span>
-                            <span>•</span>
-                        </div>
-                    </div>
-
-                    <div class="img-container">
-                        <img src="images/gaalxy.png" alt="galaxy">
-                    </div>
-
-                    <p class="price-product">128$</p>
-                    <p class="descreption-product">Lorem ipsum dolor sit amet con tur adipisicing elit. Ad totam temporibus quibusdam obcaecati nostrum sapiente!</p>
-                </article>
-
-                <article class="product">
-                    <div class="title-product"> <a href=""> Galaxy s8 </a>
-                        <div>
-                            <span>•</span>
-                            <span>•</span>
-                            <span>•</span>
-                        </div>
-                    </div>
-
-                    <div class="img-container">
-                        <img src="images/gaalxy.png" alt="galaxy">
-                    </div>
-
-                    <p class="price-product">128$</p>
-                    <p class="descreption-product">Lorem ipsum dolor sit amet con tur adipisicing elit. Ad totam temporibus quibusdam obcaecati nostrum sapiente!</p>
-                </article>
-
-                <article class="product">
-                    <div class="title-product"> <a href=""> Galaxy s8 </a>
-                        <div>
-                            <span>•</span>
-                            <span>•</span>
-                            <span>•</span>
-                        </div>
-                    </div>
-
-                    <div class="img-container">
-                        <img src="images/gaalxy.png" alt="galaxy">
-                    </div>
-
-                    <p class="price-product">128$</p>
-                    <p class="descreption-product">Lorem ipsum dolor sit amet con tur adipisicing elit. Ad totam temporibus quibusdam obcaecati nostrum sapiente!</p>
-                </article>
-
-
-                <article class="product">
-                    <div class="title-product"> <a href=""> Galaxy s8 </a>
-                        <div>
-                            <span>•</span>
-                            <span>•</span>
-                            <span>•</span>
-                        </div>
-                    </div>
-
-                    <div class="img-container">
-                        <img src="images/gaalxy.png" alt="galaxy">
-                    </div>
-
-                    <p class="price-product">128$</p>
-                    <p class="descreption-product">Lorem ipsum dolor sit amet con tur adipisicing elit. Ad totam temporibus quibusdam obcaecati nostrum sapiente!</p>
-                </article>
-
-
-
             </div>
         </section>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const toggle = $('.hamburger');
+        const closeToggle = $('.toggle-close');
+        const sideBar = $(".sidebar");
+        let isSideBarOpen = false;
+
+        $(document).ready(function() {
+            toggle.click(clickToggle);
+            closeToggle.click(closeSidebar);
+            $(".sec").click(function(param) {
+                if (isSideBarOpen) {
+                    closeSidebar();
+                }
+            })
+        });
+
+
+
+        function clickToggle() {
+            isSideBarOpen = true;
+            sideBar.addClass("hide-side-bar");
+        }
+
+
+        function closeSidebar() {
+            isSideBarOpen = false;
+            sideBar.removeClass("hide-side-bar");
+        }
+    </script>
 </body>
 
 </html>
