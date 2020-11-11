@@ -26,14 +26,13 @@ function displayData(data) {
     $(this)
       .children(2)
       .fadeIn();
-    $(".dropdown-content").fadeOut(3000);
+    // $(".dropdown-content").fadeOut(3000);
+    $(".dropdown-content")
+      .hide()
+      .delay(5000)
+      .fadeIn(400);
   });
 }
-$("body").click(function(e) {
-  if ($(e.target).attr("class") !== "dropdown") {
-    // $('.dropdown-content').fadeOut(800) ;
-  }
-});
 
 function display(index, dataSet) {
   $(".section-container").append(`<article class="product">
