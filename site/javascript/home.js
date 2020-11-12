@@ -1,45 +1,40 @@
-const toggle = $(".hamburger");
-const closeToggle = $(".toggle-close");
-const sideBar = $(".sidebar");
-let isSideBarOpen = false;
-let url = "data/data.json";
+   const toggle = $(".hamburger");
+   const closeToggle = $(".toggle-close");
+   const sideBar = $(".sidebar");
+   let isSideBarOpen = false;
+   let url = "data/data.json";
 
-$(document).ready(function() {
-  toggle.click(clickToggle);
-  closeToggle.click(closeSidebar);
-  $(".sec").click(function(param) {
-    if (isSideBarOpen) {
-      closeSidebar();
-    }
-  });
-});
+   $(document).ready(function () {
+     toggle.click(clickToggle);
+     closeToggle.click(closeSidebar);
+     $(".sec").click(function (param) {
+       if (isSideBarOpen) {
+         closeSidebar();
+       }
+     });
+   });
 
-$.ajax({
-  url: "data/data.json",
-  method: "GET",
-  dataType: "json"
-}).done(displayData);
+   $.ajax({
+     url: "data/data.json",
+     method: "GET",
+     dataType: "json"
+   }).done(displayData);
 
-function displayData(data) {
-  $.each(data, display);
-  $(".dropdown").click(function name(params) {
-    $(this)
-      .children(2)
-      .fadeIn();
-    // $(".dropdown-content").fadeOut(3000);
-    $(".dropdown-content")
-      .hide()
-      .delay(5000)
-      .fadeIn(400);
-  });
-}
+   function displayData(data) {
+     //  $.each(data, display);
+     $(".dropdown").click(function name(params) {
+       $(this)
+         .children(2)
+         .fadeIn().delay(2000);
+       $(".dropdown-content").fadeOut(400);
 
-function display(index, dataSet) {
-  $(".section-container").append(`<article class="product">
+     });
+   }
+
+   function display(index, dataSet) {
+     $(".section-container").append(`<article class="product">
                     <div class="title-product"> <a href=""> ${dataSet.name} </a>
-                        
                     </div>
-
                     <div class="img-container">
                         <img src="${dataSet.img}" alt="galaxy" height="200" width="180" >
                     </div>
@@ -57,14 +52,14 @@ function display(index, dataSet) {
                             </div>
                         </div>
                 </article>`);
-}
+   }
 
-function clickToggle() {
-  isSideBarOpen = true;
-  sideBar.addClass("hide-side-bar");
-}
+   function clickToggle() {
+     isSideBarOpen = true;
+     sideBar.addClass("hide-side-bar");
+   }
 
-function closeSidebar() {
-  isSideBarOpen = false;
-  sideBar.removeClass("hide-side-bar");
-}
+   function closeSidebar() {
+     isSideBarOpen = false;
+     sideBar.removeClass("hide-side-bar");
+   }

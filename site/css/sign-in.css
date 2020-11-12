@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
 *,
- ::after,
- ::before {
+::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +11,7 @@
     outline: none;
 }
 
- :root {
+:root {
     /* dark shades of primary color*/
     --primary: #071a52;
     --primary_3: rgba(3, 10, 32, 0.726);
@@ -26,6 +27,10 @@
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --max-width: 1170px;
     --fixed-width: 620px;
+}
+
+title {
+    padding: 8px;
 }
 
 body {
