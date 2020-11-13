@@ -21,7 +21,7 @@
    }).done(displayData);
 
    function displayData(data) {
-     //  $.each(data, display);
+     $.each(data, display);
      $(".dropdown").click(function name(params) {
        $(this)
          .children(2)
