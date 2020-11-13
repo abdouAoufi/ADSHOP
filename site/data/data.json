@@ -1,193 +1,217 @@
 [
 
   {
-    "id": 0,
-    "category": "Phone",
-    "name": "Redmi note 8 pro ",
+
+    "title": "Redmi note 8 pro ",
     "img": "https://i01.appmifile.com/webfile/globalimg/in/cms/731421C0-24A8-3B82-A6F3-951361E948A4.jpg",
     "price": "33500",
     "wilaya": "Bechar",
     "place": "Bechar douira",
-    "descreption": "Redmi note 8 pro etat 10/10 sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 1,
-    "category": "Phone",
-    "name": "Galaxy s6 ",
-    "img": "data/galaxys6.png",
-    "price": "13500",
-    "wilaya": "Boumerdes",
-    "place": "Boumerdes Alilguia",
-    "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 2,
-    "category": "Phone",
-    "name": "Galaxy s5 ",
-    "img": "data/galaxys5.jpg",
-    "price": "11500",
-    "place": "Boumerdes Boudouaou",
-    "wilaya": "Boumerdes",
-    "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 3,
-    "category": "Phone",
-    "name": "Iphone 6s",
-    "img": "data/iphone6s.jpg",
-    "price": "19500",
-    "place": "Blida  Blida",
-    "wilaya": "Blida",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 4,
-    "category": "Phone",
-    "name": "Galaxy s6 ",
-    "img": "data/galaxys6.png",
-    "price": "13500",
-    "wilaya": "Boumerdes",
-    "place": "Boumerdes Tidjlabine",
-    "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 5,
-    "category": "Phone",
-    "name": "Galaxy s5 ",
-    "img": "data/galaxys5.jpg",
-    "price": "11500",
-    "wilaya": "Boumerdes",
-    "place": "Boumerdes Boudouaou",
-    "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 6,
-    "category": "Phone",
-    "name": "Galaxy A11",
-    "img": "https://t.infibeam.com/img/othe/8687242/3d/7f/samsunggalaxya11a115f32gbblue1.jpg.f75bd33d7f.999x600x550.jpg",
-    "price": "29500",
-    "wilaya": "Bourdj Bouariridj",
-    "place": "Bourdj Bouariridj Ras el wad",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 7,
-    "category": "Phone",
-    "name": "Galaxy s8",
-    "img": "https://www.gizmochina.com/wp-content/uploads/2018/02/Samsung-Galaxy-S8-Plus-G955FD.jpg",
-    "price": "49500",
-    "wilaya": "Alger",
-    "place": "Alger",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 8,
-    "category": "Phone",
-    "name": "Galaxy note 8",
-    "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-8.png",
-    "price": "79500",
-    "wilaya": "Bouira",
-    "place": "Bouira ain naamane",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 9,
-    "category": "Phone",
-    "name": "Galaxy note 9",
-    "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-9-leak-packshot.png",
-    "price": "99500",
-    "wilaya": "Oran",
-    "place": "Oran aalia",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 10,
-    "category": "Phone",
-    "name": "Galaxy s6 ",
-    "img": "data/galaxys6.png",
-    "price": "13500",
-    "wilaya": "Boumerdes",
-    "place": "Boumerdes Alilguia",
-    "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 11,
-    "category": "Phone",
-    "name": "Galaxy s5 ",
-    "img": "data/galaxys5.jpg",
-    "price": "11500",
-    "place": "Boumerdes Boudouaou",
-    "wilaya": "Boumerdes",
-    "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 12,
-    "category": "Phone",
-    "name": "Iphone 6s",
-    "img": "data/iphone6s.jpg",
-    "price": "19500",
-    "place": "Blida  Blida",
-    "wilaya": "Blida",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 13,
-    "category": "Phone",
-    "name": "Galaxy s6 ",
-    "img": "data/galaxys6.png",
-    "price": "13500",
-    "wilaya": "Boumerdes",
-    "place": "Boumerdes Tidjlabine",
-    "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 14,
-    "category": "Phone",
-    "name": "Galaxy s5 ",
-    "img": "data/galaxys5.jpg",
-    "price": "11500",
-    "wilaya": "Boumerdes",
-    "place": "Boumerdes Boudouaou",
-    "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 15,
-    "category": "Phone",
-    "name": "Galaxy A11",
-    "img": "https://t.infibeam.com/img/othe/8687242/3d/7f/samsunggalaxya11a115f32gbblue1.jpg.f75bd33d7f.999x600x550.jpg",
-    "price": "29500",
-    "wilaya": "Bourdj Bouariridj",
-    "place": "Bourdj Bouariridj Ras el wad",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 16,
-    "category": "Phone",
-    "name": "Galaxy s8",
-    "img": "https://www.gizmochina.com/wp-content/uploads/2018/02/Samsung-Galaxy-S8-Plus-G955FD.jpg",
-    "price": "49500",
-    "wilaya": "Alger",
-    "place": "Alger",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 17,
-    "category": "Phone",
-    "name": "Galaxy note 8",
-    "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-8.png",
-    "price": "79500",
-    "wilaya": "Bouira",
-    "place": "Bouira ain naamane",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
-  },
-  {
-    "id": 18,
-    "category": "Phone",
-    "name": "Galaxy note 9",
-    "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-9-leak-packshot.png",
-    "price": "99500",
-    "wilaya": "Oran",
-    "place": "Oran aalia",
-    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach"
+    "descreption": "Redmi note 8 pro etat 10/10 sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 0,
+    "hourPost": "2 hours",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 0,
+      "name": "Abdou",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
   }
+
+
+
+  ,
+  {
+    "title": "Galaxy s6 ",
+    "img": "data/galaxys6.png",
+    "price": "13500",
+    "wilaya": "Boumerdes",
+    "place": "Boumerdes Alilguia",
+    "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 1,
+    "hourPost": "2 hours",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 0,
+      "name": "Abdou",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
+  },
+  {
+    "title": "Galaxy s5 ",
+    "img": "data/galaxys5.jpg",
+    "price": "11500",
+    "place": "Boumerdes Boudouaou",
+    "wilaya": "Boumerdes",
+    "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 2,
+    "hourPost": "2 hours",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 0,
+      "name": "Abdou",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
+  },
+  {
+
+
+    "title": "Iphone 6s",
+    "img": "data/iphone6s.jpg",
+    "price": "19500",
+    "place": "Blida  Blida",
+    "wilaya": "Blida",
+    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 3,
+    "hourPost": "30 min",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 3,
+      "name": "Tarek",
+      "wilaya": "Alger",
+      "phone": "0672308746"
+    }
+  },
+  {
+
+    "title": "Galaxy s6 ",
+    "img": "data/galaxys6.png",
+    "price": "13500",
+    "wilaya": "Oran",
+    "place": "Oran Tidjlabine",
+    "descreption": "Galaxy s6 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 4,
+    "hourPost": "2 days",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 4,
+      "name": "Ammar",
+      "wilaya": "oran",
+      "phone": "0672308746"
+    }
+  },
+  {
+
+    "title": "Galaxy m31 ",
+    "img": "https://gsmorigin.com/wp-content/uploads/2020/03/Samsung-Galaxy-M31-425x425.jpg",
+    "price": "41500",
+    "wilaya": "Boumerdes",
+    "place": "Boumerdes Boudouaou",
+    "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 5,
+    "hourPost": "7 hours",
+    "stateSell": "fixe",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 5,
+      "name": "Abdou",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
+  },
+  {
+
+    "title": "Galaxy A11",
+    "img": "https://t.infibeam.com/img/othe/8687242/3d/7f/samsunggalaxya11a115f32gbblue1.jpg.f75bd33d7f.999x600x550.jpg",
+    "price": "29500",
+    "wilaya": "Bourdj Bouariridj",
+    "place": "Bourdj Bouariridj Ras el wad",
+    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 6,
+    "hourPost": "2 hours",
+    "stateSell": "fixe",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 6,
+      "name": "Ali",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
+  },
+  {
+
+    "title": "Galaxy s8",
+    "img": "https://www.gizmochina.com/wp-content/uploads/2018/02/Samsung-Galaxy-S8-Plus-G955FD.jpg",
+    "price": "49500",
+    "wilaya": "Alger",
+    "place": "Alger",
+    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 7,
+    "hourPost": "2 hours",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 7,
+      "name": "Abdou",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
+  },
+  {
+
+    "title": "Galaxy note 8",
+    "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-8.png",
+    "price": "79500",
+    "wilaya": "Bouira",
+    "place": "Bouira ain naamane",
+    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 8,
+    "hourPost": "2 months",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 8,
+      "name": "Abdou",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
+  },
+  {
+
+    "title": "Galaxy note 9",
+    "img": "https://images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-note-9-leak-packshot.png",
+    "price": "99500",
+    "wilaya": "Oran",
+    "place": "Oran aalia",
+    "descreption": "Iphone 6s  bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
+    "postId": 9,
+    "hourPost": "2 week",
+    "stateSell": "negociable",
+    "category": "Electronic > Phone",
+    "phonePost": "0672308746",
+    "datePost": "13 - 11 - 2020",
+    "profile": {
+      "profile-id": 9,
+      "name": "Abdou",
+      "wilaya": "Boumerdes",
+      "phone": "0672308746"
+    }
+  }
+
 ]

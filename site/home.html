@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
             initial-scale=1.0">
-        <title> home page</title>
-        <link rel="shortcut icon" href="images/mouse.png">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-            />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-            rel="stylesheet">
+    <title> home page</title>
+    <link rel="shortcut icon" href="images/mouse.png">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 
-    </head>
+</head>
 
-    <body>
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="info-cont">
-                    <div class="hamburger">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <div class="logo">
-                        <img src="images/mouse.png" class="nav-logo"
-                            alt="" height="50" />
-                    </div>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="info-cont">
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
                 </div>
-                <div class="info">
-                    <ul>
-                        <li> <a href="signin.html">Sign up</a></li>
-                        <li> <a href="index.html">Log in</a></li>
-                    </ul>
+                <div class="logo">
+                    <img src="images/mouse.png" class="nav-logo" alt="" height="50" />
                 </div>
             </div>
-        </nav>
+            <div class="info">
+                <ul>
+                    <li> <a href="signin.html">Sign up</a></li>
+                    <li> <a href="index.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-        <main>
-            <aside class="sidebar">
-                <div class="toggle-close"> <i class="fas
+    <main>
+        <aside class="sidebar">
+            <div class="toggle-close"> <i class="fas
                         fa-window-close"></i></div>
-                <div class="inner-container-aside">
-                    <div class="ponit"> <img src="images/mouse.png"
-                            class="nav-logo" alt="" height="50" />
-                        <div class="quote">
-                            <h1>Abdou <span>Shop</span></h1>
-                        </div>
+            <div class="inner-container-aside">
+                <div class="ponit"> <img src="images/mouse.png" class="nav-logo" alt="" height="50" />
+                    <div class="quote">
+                        <h1>Abdou <span>Shop</span></h1>
                     </div>
-                    <ul class="categories">
-                        <li><a href="#">Electronic</a></li>
-                        <li><a href="#">Computer</a> </li>
-                        <li><a href="#">Kitchen</a></li>
-                        <li><a href="#">Electric</a></li>
-                        <li><a href="#">Software</a></li>
-                        <li><a href="#">Books</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Smartphone</a></li>
-                        <li><a href="#">Tools</a></li>
-                        <li><a href="#">school</a></li>
-                        <li><a href="#">travel</a></li>
-                        <li><a href="#">accessoire</a></li>
-                    </ul>
                 </div>
-            </aside>
+                <ul class="categories">
+                    <li><a href="#">Electronic</a></li>
+                    <li><a href="#">Computer</a> </li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Electric</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Smartphone</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">school</a></li>
+                    <li><a href="#">travel</a></li>
+                    <li><a href="#">accessoire</a></li>
+                </ul>
+            </div>
+        </aside>
 
 
-            <section class="sec">
-                <div class="section-container">
-                </div>
-            </section>
+        <section class="sec">
+            <div class="section-container">
+            </div>
+        </section>
 
 
 
 
 
-        </main>
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-        <script>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
         const toggle = $(".hamburger");
         const closeToggle = $(".toggle-close");
         const sideBar = $(".sidebar");
         let isSideBarOpen = false;
-        let isPictureDisplayerOpen = false ;
+        let isPictureDisplayerOpen = false;
         let url = "data/data.json";
 
         $(document).ready(function () {
@@ -105,8 +96,8 @@
                     closeSidebar();
                 }
             });
-         
-$(".displayer").hide(2400);
+
+            $(".displayer").hide(2400);
         });
 
         $.ajax({
@@ -116,39 +107,46 @@ $(".displayer").hide(2400);
         }).done(displayData);
 
         function displayData(data) {
-            
+
             $.each(data, display);
 
-               $(" .product").click(function () {
+            $(".title-product, .img-container ").click(function () {
                 let id = parseInt($(this).children(0).html());
                 displayFull(data[id]);
             })
-                
+
             $(".dropdown").click(function name(params) {
                 $(this)
                     .children(2)
                     .fadeIn().delay(2000);
                 $(".dropdown-content").fadeOut(400);
-             
+
             });
 
-       
-         
+
+
         }
 
         function display(index, dataSet) {
             $(".section-container").append(`<article class="product" data-name="fuck">
-                <p class="data-hold"> ${dataSet.id} </p>
-               <div class="title-product"> <h4 href=""> ${dataSet.name} </h4>
+               <div class="title-product">
+                <p class="data-hold"> ${dataSet.postId} </p>
+                   <h4 href=""> ${dataSet.title} </h4>
                </div>
                <div class="img-container">
+                <p class="data-hold"> ${dataSet.postId} </p>
                    <img src="${dataSet.img}" alt="galaxy" height="200" width="180">
                </div>
-               <div class="basic-info">
+               <div class="product-price sp">
                    <p class="price-product">${dataSet.price} <span>DA</span></p>
-                   <p class="place-product">${dataSet.wilaya} <span><span></p>
+                 <p class="state-product"> [ <i>${dataSet.stateSell}</i> ] </p>
                </div>
-               <p class="descreption-product">${dataSet.descreption}</p>
+               
+                 <div class="product-price">
+                     <p class="hour-product">${dataSet.hourPost} </p>
+                     <p class="place-product">${dataSet.wilaya}  </p>
+                 </div>
+               <p class="descreption-product"> ${dataSet.descreption}</p>
                <div class="dropdown">
               <img class="dots" src="images/menu.svg" height=17>
                    <div class="dropdown-content">
@@ -157,9 +155,8 @@ $(".displayer").hide(2400);
                        <a href="#">Report</a>
                    </div>
                </div>
-           </article>`
-           );
-            
+           </article>`);
+
         }
 
         function clickToggle() {
@@ -172,42 +169,40 @@ $(".displayer").hide(2400);
             sideBar.removeClass("hide-side-bar");
         }
 
-            function stopScrolling() {
-                $('html, body').css({
-                    overflow: 'hidden',
-                    height: '100%'
-                });
-            }
+        function stopScrolling() {
+            $('html, body').css({
+                overflow: 'hidden',
+                height: '100%'
+            });
+        }
 
-              function backScrolling() {
-                    $('html, body').css({
-                    overflow: 'auto',
-                    height: 'auto'      
-                    });
-                }
+        function backScrolling() {
+            $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
+        }
 
-                function displayFull(data){
-                    console.log(data);
-                    
-                    $('body').append(
-                        ` <section class="displayer">
+        function displayFull(data) {
+            console.log();
+
+            $('body').append(
+                ` <section class="displayer">
 
               <div class="display-content">
                   <div class="closee"><i class="fas fa-times"></i></div>
                   <article class="product-to-diplay">
-                      <h2 class="dis-title sp">${data.name}</h1>
-                          <h3 class="dis-price sp"> ${data.price} <span> [
-                                  Negociable ] </span> </h3>
+                      <h2 class="dis-title sp">${data.title} </h1>
+                          <h3 class="dis-price sp"> ${data.price} DA <span> [
+                                  ${data.stateSell} ] </span> </h3>
                           <h3 class="dis-place sp">${data.place}
                           </h3>
                           <h3 class="dis-phone sp">Phone : <span>
-                               ${data.wilaya}</span> </h3>
+                               ${data.phonePost}</span> </h3>
 
-                          <p class="dis-category sp"> ${data.category} <i class="fas fa-greater-than"
-                                  style="font-size: 10px"></i>
+                          <p class="dis-category sp">  
                             ${data.category} </p>
-                          <p class="dis-date">Posted : <span>10 -11 -
-                                  2020 At 23:26</span> </p>
+                          <p class="dis-date">Posted : <span>${data.datePost}</span> </p>
                           <div class="dis-details sp">
                               <h5>Details : </h5>
                               <p>${data.descreption} </p>
@@ -225,22 +220,21 @@ $(".displayer").hide(2400);
                                       <img src="https://images.unsplash.com/photo-1604919912564-6480b79b1c11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80"
                                           alt="" height="60">
                                       <div class="dis-basic-info">
-                                          <h5 class="name">Abderhmane
-                                              Aoufi</h5>
-                                          <h5 class="wilaya">Boumerdes</h5>
+                                          <h5 class="name">${data.profile.name}</h5>
+                                          <h5 class="wilaya">${data.profile.wilaya}</h5>
                                       </div>
                                   </div>
                                   <button class="others"><i class="fas
                                         fa-caret-down"></i></button>
                               </div>
                               <div class="contact">
-                                  <button class="message"><i class="far
+                                  <button class="message" title="send message"><i class="far
                                         fa-comments"></i></button>
-                                  <button class="others"><i class="fas
+                                  <button class="others" title="save"><i class="fas
                                         fa-bookmark"></i></button>
-                                  <button class="others"><i class="fas
+                                  <button class="others" title="share"><i class="fas
                                         fa-share"></i></button>
-                                  <button class="others"><i class="fas
+                                  <button class="others" title="more" ><i class="fas
                                         fa-caret-down"></i></button>
                               </div>
                           </div>
@@ -259,22 +253,30 @@ $(".displayer").hide(2400);
           </section>
           
 `);
-stopScrolling();
+            stopScrolling();
 
-                    $(".closee").click(function clickedProduct(params) {
-                        hideFull();
-                    })
+            $(".closee").click(function clickedProduct(params) {
+                hideFull();
+            });
 
-                    
-               
-                }
+            $('.dis-see').click(function () {
+                $(".product-to-diplay ").css({
+                    display: 'none'
+                });
+                $(' .pictures-container').css({
+                    display: 'grid'
+                })
+            });
 
-                function hideFull() {
-                    $(".displayer").fadeOut(500);
-                    backScrolling();
-                }
-    
+
+
+        }
+
+        function hideFull() {
+            $(".displayer").fadeOut(500);
+            backScrolling();
+        }
     </script>
-    </body>
+</body>
 
 </html>
