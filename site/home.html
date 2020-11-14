@@ -133,8 +133,9 @@
                     .children(2)
                     .fadeIn().delay(2000);
                 $(".dropdown-content").fadeOut(400);
-
             });
+
+  
 
 
 
@@ -152,7 +153,7 @@
                </div>
                <div class="product-price sp">
                    <p class="price-product">${dataSet.price} <span>DA</span></p>
-                 <p class="state-product"> [ <i>${dataSet.stateSell}</i> ] </p>
+                 <p class="priceState"> [ <span>${dataSet.stateSell}</span> ] </p>
                </div>
                
                  <div class="product-price">
@@ -175,6 +176,17 @@
                        </div>
                </div>
            </article>`);
+                     $(".priceState").is(function name(params) {
+                // console.log($(this).text());
+                let text = $(this).children(0).text();
+                console.log(text);
+
+                if (text == "negociable") {
+                    $(this).children(0).css({ color: "green" , "font-weight" : 700 })
+                }
+                //  );
+
+            })
 
         }
 
@@ -253,7 +265,7 @@ alert();
                        <div class="closee"><i class="fas fa-times"></i></div>
                        <article class="product-to-diplay">
                            <h2 class="dis-title sp">${data.title} </h1>
-                               <h3 class="dis-price sp"> ${data.price} DA <span> [
+                               <h3 class="dis-price sp"> ${data.price} DA <span class="priceState"> [
                                        ${data.stateSell} ] </span> </h3>
                                <h3 class="dis-place sp">${data.place}
                                </h3>
