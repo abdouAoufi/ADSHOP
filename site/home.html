@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
             initial-scale=1.0">
-    <title> home page</title>
-    <link rel="shortcut icon" href="images/mouse.png">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <title> home page</title>
+        <link rel="shortcut icon" href="images/mouse.png">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet">
 
 
-</head>
+    </head>
 
-<body>
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="info-cont">
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="logo">
-                    <img src="images/mouse.png" class="nav-logo" alt="" height="50" />
-                </div>
-            </div>
-            <div class="info">
-                <ul>
-                    <li> <a href="signin.html">Sign up</a></li>
-                    <li> <a href="index.html">Log in</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <main>
-        <aside class="sidebar">
-            <div class="toggle-close"> <i class="fas
-                        fa-window-close"></i></div>
-            <div class="inner-container-aside">
-                <div class="ponit"> <img src="images/mouse.png" class="nav-logo" alt="" height="50" />
-                    <div class="quote">
-                        <h1>Abdou <span>Shop</span></h1>
+    <body>
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="info-cont">
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/mouse.png" class="nav-logo"
+                            alt="" height="50" />
                     </div>
                 </div>
-                <ul class="categories">
-                    <li><a href="#">Electronic</a></li>
-                    <li><a href="#">Computer</a> </li>
-                    <li><a href="#">Kitchen</a></li>
-                    <li><a href="#">Electric</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Smartphone</a></li>
-                    <li><a href="#">Tools</a></li>
-                    <li><a href="#">school</a></li>
-                    <li><a href="#">travel</a></li>
-                    <li><a href="#">accessoire</a></li>
-                </ul>
+                <div class="info">
+                    <ul>
+                        <li> <a href="signin.html">Sign up</a></li>
+                        <li> <a href="index.html">Log in</a></li>
+                    </ul>
+                </div>
             </div>
-        </aside>
+        </nav>
 
 
-        <section class="sec">
-            <div class="section-container">
-            </div>
-        </section>
+        <main>
+            <aside class="sidebar">
+                <div class="toggle-close"> <i class="fas
+                        fa-window-close"></i></div>
+                <div class="inner-container-aside">
+                    <div class="ponit"> <img src="images/mouse.png"
+                            class="nav-logo" alt="" height="50" />
+                        <div class="quote">
+                            <h1>Abdou <span>Shop</span></h1>
+                        </div>
+                    </div>
+                    <ul class="categories">
+                        <li><a href="#">Electronic</a></li>
+                        <li><a href="#">Computer</a> </li>
+                        <li><a href="#">Kitchen</a></li>
+                        <li><a href="#">Electric</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Smartphone</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">school</a></li>
+                        <li><a href="#">travel</a></li>
+                        <li><a href="#">accessoire</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+
+            <section class="sec">
+                <div class="section-container">
+                </div>
+            </section>
 
 
 
 
 
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-    <script>
+
+
+
+        </main>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <script>
         const toggle = $(".hamburger");
         const closeToggle = $(".toggle-close");
         const sideBar = $(".sidebar");
@@ -135,7 +147,7 @@
                </div>
                <div class="img-container">
                 <p class="data-hold"> ${dataSet.postId} </p>
-                   <img src="${dataSet.img}" alt="galaxy" height="200" width="180">
+                   <img src="${dataSet.img[0]}" title="${dataSet.title}"  alt="galaxy" height="200" width="180">
                </div>
                <div class="product-price sp">
                    <p class="price-product">${dataSet.price} <span>DA</span></p>
@@ -148,12 +160,18 @@
                  </div>
                <p class="descreption-product"> ${dataSet.descreption}</p>
                <div class="dropdown">
+
               <img class="dots" src="images/menu.svg" height=17>
-                   <div class="dropdown-content">
-                       <a href="#">Add to bag</a>
-                       <a href="#">Not interrest</a>
-                       <a href="#">Report</a>
-                   </div>
+                       <div class="dropdown-content">
+
+                           <ul>
+                               <li> <i class="fas fa-shopping-bag"></i> <a href="#">Add to bag</a> </li>
+                               <li> <i class="fas fa-thumbs-down"></i><a href="#">Not interested</a></li>
+                               <li> <i class="fas fa-eye-slash"></i> <a href="#">Hide</a></li>
+                               <li> <i class="fas fa-flag"></i> <a href="#">Report</a></li>
+                           </ul>
+
+                       </div>
                </div>
            </article>`);
 
@@ -168,23 +186,11 @@
             isSideBarOpen = false;
             sideBar.removeClass("hide-side-bar");
         }
-
-        function stopScrolling() {
-            $('html, body').css({
-                overflow: 'hidden',
-                height: '100%'
-            });
-        }
-
-        function backScrolling() {
-            $('html, body').css({
-                overflow: 'auto',
-                height: 'auto'
-            });
-        }
+ 
 
         function displayFull(data) {
             console.log();
+            let indexImg  = 0 ;
 
             $('body').append(
                 ` <section class="displayer">
@@ -242,18 +248,37 @@
                   </article>
 
                   <div class="pictures-container">
-                      <img src="${data.img}" alt="galaxy" title="galaxy s8+">
-                      <h4 class="fas fa-greater-than next-image
-                            change-image" title="Next Image"> </h4>
-                      <h4 class="fas fa-less-than pre-image
-                            change-image" title="Previous Image">
-                      </h4>
+                      <img class="image-show" src="${data.img[indexImg]}" alt="galaxy" title="${data.title}">
+                      <img src="images/next.svg" class="next-image change-image" height=50>
+                      <img src="images/pre.svg" class="pre-image change-image" height=50>
                   </div>
               </div>
           </section>
+
+          
           
 `);
-            stopScrolling();
+
+$('.next-image').click(function name(params) {
+    if(indexImg < data.img.length -1 ){
+    ++indexImg;
+ 
+    $(".image-show").attr("src", data.img[indexImg])
+
+    
+    }
+});
+
+            $('.pre-image').click(function name(params) {
+                if (indexImg > 0|| indexImg > 1) {
+                    --indexImg;
+
+                    $(".image-show").attr("src", data.img[indexImg])
+
+
+                }
+            })
+            // stopScrolling();
 
             $(".closee").click(function clickedProduct(params) {
                 hideFull();
@@ -274,9 +299,8 @@
 
         function hideFull() {
             $(".displayer").fadeOut(500);
-            backScrolling();
         }
     </script>
-</body>
+    </body>
 
 </html>
