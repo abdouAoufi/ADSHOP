@@ -398,6 +398,7 @@ body {
 }
 
 .display-content {
+  z-index: 7;
   border-radius: 5px;
   /* margin-top: 4rem; */
   background: #fff;
@@ -669,7 +670,7 @@ body {
   }
 
   .contact {
-    display: none;
+    /* display: none; */
   }
 
   .display-content {
