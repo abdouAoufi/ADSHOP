@@ -133,10 +133,11 @@ body {
   letter-spacing: 0;
   opacity: 0.6;
   text-transform: lowercase;
+  font-weight: 700;
 }
 
 .priceState span {
-  color: #3046b3;
+  color: #d61968;
 }
 
 .data-hold {
@@ -443,7 +444,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   max-lines: 3;
   /* number of lines to show */
   -webkit-box-orient: vertical;
@@ -462,12 +463,11 @@ body {
 
 .dis-profile {
   /* position: absolute; */
-  width: 95%;
+  width: 100%;
   height: auto;
-  bottom: 1rem;
+
   max-height: 400px;
   margin: 1rem auto;
-
   background: #eee;
   border-radius: 5px;
   padding-top: 0.6rem;
