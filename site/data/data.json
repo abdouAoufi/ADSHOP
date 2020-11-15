@@ -47,6 +47,7 @@
       "phone": "0672308746"
     }
   },
+
   {
     "title": "Galaxy s5 ",
     "img": ["data/galaxys5.jpg",
@@ -59,7 +60,7 @@
     "descreption": "Galaxy s5 chbab bon etat sauf que fih la miditi ljfo9 w mkassar mn lor cnn apar ca yamchi koulach",
     "postId": 2,
     "hourPost": "July 12, 2020 09:24:00",
-    "stateSell": "fixe",
+    "stateSell": "negociable",
     "category": "Electronic > Phone",
     "phonePost": "0672308746",
     "datePost": "13 - 11 - 2020",

@@ -68,9 +68,7 @@
 
 
         function displayData(data) {
-
             $.each(data, display);
-
             $(".title-product, .img-container ").click(function () {
                 let id = parseInt($(this).children(0).html());
                 displayFull(data[id]);
@@ -84,11 +82,13 @@
             });
         }
 
+        let counter = 0;
+
         function display(index, dataSet) {
+            if (counter < 10) {
+                let date = (calculateDate(dataSet.hourPost))
 
-            let date = (calculateDate(dataSet.hourPost))
-
-            $(".section-container").append(`<article class="product" data-name="fuck">
+                $(".section-container").append(`<article class="product" data-name="fuck">
                <div class="title-product">
                 <p class="data-hold"> ${dataSet.postId} </p>
                    <h4 href=""> ${dataSet.title} </h4>
@@ -122,18 +122,20 @@
                        </div>
                </div>
            </article>`);
-            $(".priceState").is(function name(params) {
-                // console.log($(this).text());
-                let text = $(this).children(0).text();
+                $(".priceState").is(function name(params) {
+                    // console.log($(this).text());
+                    let text = $(this).children(0).text();
 
-                if (text == "negociable") {
-                    $(this).children(0).css({
-                        color: "green"
-                    })
-                }
-                //  );
+                    if (text == "negociable") {
+                        $(this).children(0).css({
+                            color: "green"
+                        })
+                    }
+                    //  );
 
-            })
+                })
+                counter++;
+            }
 
         }
 
@@ -262,8 +264,8 @@
 
                        <div class="pictures-container">
                            <img class="image-show" src="${data.img[0]}" alt="galaxy" title="${data.title}">
-                           <img src="images/next.svg" class="next-image change-image" height=30>
-                           <img src="images/pre.svg" class="pre-image change-image" height=30>
+                          <i class = "fas fa-chevron-right next-image change-image" > </i>
+                          <i class = "fas fa-chevron-left pre-image change-image" > </i>
                        </div>
                    </div>
                </section>

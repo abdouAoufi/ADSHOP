@@ -3,7 +3,7 @@
   --primary-dark: rgb(27, 63, 35);
   --radius: 5px;
   --border: 1px solid black;
-  --shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow: 3px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 *,
@@ -23,7 +23,7 @@ a {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  background-color: #8bc6ec;
+  background-color: #dee1ec;
   /* background-image: linear-gradient(135deg, #8BC6EC 20%, #9599E2 80%); */
 }
 
@@ -47,7 +47,7 @@ body {
   z-index: 4;
   background-color: #fff;
   /* margin-bottom: 4rem; */
-  box-shadow: var(--shadow);
+  box-shadow: 1px 2px 3px #c4c4c4;
   /* border: var(--border); */
 }
 
@@ -116,7 +116,7 @@ body {
 
 .product {
   padding: 20px 1rem;
-  background-color: #eee;
+  background-color: #FFF;
   margin: auto;
   place-items: center;
   /* border: var(--border); */
@@ -136,9 +136,6 @@ body {
   font-weight: 700;
 }
 
-.priceState span {
-  color: #d61968;
-}
 
 .data-hold {
   display: none;
@@ -202,6 +199,14 @@ body {
   color: #cb3b3be0;
   font-weight: 450;
   padding-right: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  line-height: 23px;
+  max-lines: 1;
 }
 
 .state-product {
@@ -465,7 +470,7 @@ body {
   /* position: absolute; */
   width: 100%;
   height: auto;
-
+  box-shadow: var(--shadow);
   max-height: 400px;
   margin: 1rem auto;
   background: #eee;
@@ -556,7 +561,6 @@ body {
   place-items: center;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: #dee1ec;
   position: relative;
   padding: 1rem;
   border: border;
@@ -570,19 +574,30 @@ body {
 }
 
 .next-image {
+  opacity: .5;
   position: absolute;
   top: 50%;
   right: 1rem;
+
 }
 
 .change-image {
-  font-size: 2.2rem;
-  color: #4a4f6b;
+  padding: .4rem 1.4rem;
+  font-size: 1.4rem;
+  background-color: #9195a856;
+  color: #0e153a;
   cursor: pointer;
+  border-radius: 3px;
   transform: translateY(-50%);
 }
 
+
+.change-image:hover {
+  background: rgba(34, 34, 34, 0.471);
+}
+
 .pre-image {
+  opacity: .5;
   position: absolute;
   top: 50%;
   left: 1rem;
@@ -600,7 +615,8 @@ body {
   z-index: 3;
 }
 
-.closee:hover {
+.closee:hover,
+.closee:active {
   opacity: 0.9;
   color: #cb3b3b;
 }
@@ -660,12 +676,13 @@ body {
   .change-image {
     /* display: none; */
   }
+
   .product-to-diplay {
     /* display: none; */
     height: 100%;
   }
 
- 
+
 
 
   .display-content {
@@ -673,7 +690,5 @@ body {
     height: auto;
   }
 
-  .next-image {
-    height: 15px;
-  }
+
 }
