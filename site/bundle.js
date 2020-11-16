@@ -81,9 +81,7 @@
                 $(".dropdown-content").fadeOut(400);
             });
         }
-
         let counter = 0;
-
         function display(index, dataSet) {
             if (counter < 10) {
                 let date = (calculateDate(dataSet.hourPost))
@@ -99,7 +97,7 @@
                </div>
                <div class="product-price sp">
                    <p class="price-product">${dataSet.price} <span>DA</span></p>
-                 <p class="priceState"> [ <span>${dataSet.stateSell}</span> ] </p>
+                 <p class="priceState"> [<span>${dataSet.stateSell}</span>]</p>
                </div>
                
                  <div class="product-price">
@@ -131,12 +129,9 @@
                             color: "green"
                         })
                     }
-                    //  );
-
                 })
                 counter++;
             }
-
         }
 
         function clickToggle() {

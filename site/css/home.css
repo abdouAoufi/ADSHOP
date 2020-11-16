@@ -186,6 +186,7 @@ body {
   display: flex;
   font-family: "Lato", sans-serif;
   position: relative;
+  width: 100%;
 }
 
 .price-product {
@@ -210,7 +211,7 @@ body {
 }
 
 .state-product {
-  font-weight: 500;
+  /* font-weight: 500; */
   color: #0b8457;
   width: auto;
 }
@@ -220,7 +221,7 @@ body {
   position: absolute;
   margin-top: -5px;
   margin-left: 3.5px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 .place-product {
@@ -257,7 +258,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 20%;
   font-weight: 200;
   height: 100%;
   display: grid;
@@ -636,15 +637,10 @@ body {
     width: 100%;
   }
 
-  .section-container {
-    width: 100vw;
-    margin: auto;
-    max-width: 1270px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1rem;
-    /* padding: 2rem 2rem; */
+
+
+  .sidebar {
+    width: 100%;
   }
 }
 
