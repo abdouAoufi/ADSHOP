@@ -102,13 +102,13 @@ body {
 }
 
 .section-container {
-  width: 90vw;
+  width: 100vw;
   max-width: 1270px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 1.6rem;
   grid-row-gap: 1.6rem;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   margin: auto;
 }
 
@@ -116,12 +116,12 @@ body {
 
 .product {
   padding: 20px 1rem;
-  background-color: #FFF;
+  background-color: #fff;
   margin: auto;
   place-items: center;
   /* border: var(--border); */
   border-radius: var(--radius);
-  max-width: 400px;
+  max-width: 450px;
   height: 410px;
   overflow: hidden;
   position: relative;
@@ -135,7 +135,6 @@ body {
   text-transform: lowercase;
   font-weight: 700;
 }
-
 
 .data-hold {
   display: none;
@@ -575,15 +574,14 @@ body {
 }
 
 .next-image {
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   top: 50%;
   right: 1rem;
-
 }
 
 .change-image {
-  padding: .4rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   font-size: 1.4rem;
   background-color: #9195a856;
   color: #0e153a;
@@ -592,13 +590,12 @@ body {
   transform: translateY(-50%);
 }
 
-
 .change-image:hover {
   background: rgba(34, 34, 34, 0.471);
 }
 
 .pre-image {
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   top: 50%;
   left: 1rem;
@@ -636,8 +633,6 @@ body {
   .product {
     width: 100%;
   }
-
-
 
   .sidebar {
     width: 100%;
@@ -678,13 +673,8 @@ body {
     height: 100%;
   }
 
-
-
-
   .display-content {
     width: 90%;
     height: auto;
   }
-
-
 }
